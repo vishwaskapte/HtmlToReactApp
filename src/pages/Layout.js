@@ -1,5 +1,5 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 export default function Layout() {
   return (
@@ -14,10 +14,10 @@ export default function Layout() {
                   </button>
                   <div className="collapse navbar-collapse" id="navbarResponsive">
                       <ul className="navbar-nav ms-auto py-4 py-lg-0">
-                          <li className="nav-item"><a className="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a></li>
-                          <li className="nav-item"><a className="nav-link px-lg-3 py-3 py-lg-4" href="/about">About</a></li>
-                          <li className="nav-item"><a className="nav-link px-lg-3 py-3 py-lg-4" href="/post">Sample Post</a></li>
-                          <li className="nav-item"><a className="nav-link px-lg-3 py-3 py-lg-4" href="/contact">Contact</a></li>
+                          <li className="nav-item"><Link className="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</Link></li>
+                          <li className="nav-item"><Link className="nav-link px-lg-3 py-3 py-lg-4" href="/about">About</Link></li>
+                          <li className="nav-item"><Link className="nav-link px-lg-3 py-3 py-lg-4" href="/post">Sample Post</Link></li>
+                          <li className="nav-item"><Link className="nav-link px-lg-3 py-3 py-lg-4" href="/contact">Contact</Link></li>
                       </ul>
                   </div>
               </div>
